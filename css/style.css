@@ -1,0 +1,73 @@
+.white {
+    color: white;
+}
+
+.gallery-container {
+    position: relative;
+}
+
+#left,
+#right {
+    position: absolute;
+    top: 50%;
+    font-size: 200%;
+    transition: all 0.5s;
+    cursor: pointer;
+    padding: 20px 0;
+    user-select: none;
+}
+
+#left:hover,
+#right:hover {
+    background: linear-gradient(to bottom, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+}
+
+#left {
+    left: 0;
+}
+
+#right {
+    right: 0;
+}
+
+#gallery-image {
+    user-select: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.grad {
+    background: linear-gradient(to bottom, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+}
+
+
+/*A Gray Curtain all over the screen  */
+
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(99, 99, 99, 0.3);
+}
+
+.modal-content {
+    border: 3px solid black;
+    width: 40%;
+    padding: 5%;
+    /*margin auto helps with centering. ex: width = 50% margin-left="25%"  */
+    /* margin: top-bottom left-right; */
+    margin: 20% auto;
+    /*auto in x == center in x  */
+    position: relative;
+}
+
+.text-right {
+    color: black;
+    /* float: right; */
+    position: absolute;
+    top: 5%;
+    right: 2%;
+}
